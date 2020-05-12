@@ -6,6 +6,7 @@
     <string name="title_message">Calculation Test</string>
     <string name="title_image_info">title image</string>
     <string name="title_button_message">Enter</string>
+    <string name="high_score_message">High Score:%d</string>
     <string name="button0">0</string>
     <string name="button1">1</string>
     <string name="button2">2</string>
@@ -18,4 +19,9 @@
     <string name="button9">9</string>
     <string name="button_clear">C</string>
     <string name="button_submit">OK</string>
+    <string name="equal_symbol">=</string>
+    <string name="question_mark">\?</string>
+    <string name="current_score">Score:%d</string>
+    <string name="input_indicator">Your Answer:</string>
+
 </resources>
