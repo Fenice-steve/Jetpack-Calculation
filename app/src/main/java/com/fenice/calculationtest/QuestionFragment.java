@@ -77,7 +77,7 @@ View.OnClickListener listener = new View.OnClickListener() {
                 break;
         }
         if (builder.length()==0){
-            binding.textView9.setText("Your Answer:");
+            binding.textView9.setText(getString(R.string.input_indicator));
         }else {
             binding.textView9.setText(builder.toString());
         }
@@ -105,7 +105,7 @@ View.OnClickListener listener = new View.OnClickListener() {
                 if (Integer.valueOf(builder.toString()).intValue() == myViewModel.getAnswer().getValue()){
                     myViewModel.answerCorrect();
                     builder.setLength(0);
-                    binding.textView9.setText("Correct! Go On!");
+                    binding.textView9.setText(R.string.answer_corrrect_message);
                 }else {
                     NavController controller = Navigation.findNavController(v);
                     if (myViewModel.win_flag){

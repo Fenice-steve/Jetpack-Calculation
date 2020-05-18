@@ -29,15 +29,15 @@ public class MainActivity extends AppCompatActivity {
     public boolean onSupportNavigateUp() {
         if (controller.getCurrentDestination().getId() == R.id.questionFragment2){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Are you sure to quit?");
-            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            builder.setTitle(getString(R.string.quit_dialog_title));
+            builder.setPositiveButton(getString(R.string.dialog_positive_message), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     myViewModel.getCurrentScore().setValue(0);
                     controller.navigateUp();
                 }
             });
-            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            builder.setNegativeButton(getString(R.string.dialog_negative_message), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
 
