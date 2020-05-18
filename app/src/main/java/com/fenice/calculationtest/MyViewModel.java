@@ -11,6 +11,7 @@ import androidx.lifecycle.SavedStateHandle;
 
 import java.util.Random;
 
+/// 使用AndroidViewModel可以直接使用Context
 public class MyViewModel extends AndroidViewModel {
 
     private SavedStateHandle handle;
